@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="stopwatch.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="stopwatch.png" />
+  </ItemGroup>
+
 </Project>

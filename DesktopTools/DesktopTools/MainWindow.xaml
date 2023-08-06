@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopTools"
         mc:Ignorable="d"
-        Title="Apps" Height="450" Width="800">
+        Title="Desktop Apps" Height="255" Width="400" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+
     <Grid>
+        <Button x:Name="Stopwatch" Content="" HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Click="Stopwatch_Click" Cursor="Hand">
+            <Button.ToolTip>
+                <ToolTip>
+                    Stopwatch
+                </ToolTip>
+            </Button.ToolTip>
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/stopwatch.png">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+
+        </Button>
 
     </Grid>
 </Window>

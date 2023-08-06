@@ -24,5 +24,11 @@ namespace DesktopTools
         {
             InitializeComponent();
         }
+
+        private void Stopwatch_Click(object sender, RoutedEventArgs e)
+        {
+            DesktopTools.TimerApp stopwatch = new TimerApp();
+            stopwatch.Show();
+        }
     }
 }
