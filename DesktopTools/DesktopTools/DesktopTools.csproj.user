@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Timer.xaml.cs">
+    <Compile Update="Views\Timer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -15,7 +15,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Timer.xaml">
+    <Page Update="Views\Timer.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

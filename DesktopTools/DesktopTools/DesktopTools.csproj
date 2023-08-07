@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="dice.png" />
     <None Remove="stopwatch.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="dice.png" />
     <Resource Include="stopwatch.png" />
   </ItemGroup>
 
