@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Threading;
 
-namespace DesktopTools
+namespace DesktopTools.Views
 {
     public partial class TimerApp : Window
     {
@@ -33,7 +33,7 @@ namespace DesktopTools
         private void InitTimer()
         {
             tickTimer.Tick += new EventHandler(Tick);
-            tickTimer.Interval = new TimeSpan(0, 0, 0, 0, 100);
+            tickTimer.Interval = new TimeSpan(0, 0, 0, 0, 20);
         }
 
         private string GetStartingTime(int minute)

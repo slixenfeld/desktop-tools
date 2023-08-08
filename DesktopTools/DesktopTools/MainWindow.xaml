@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopTools"
         mc:Ignorable="d"
-        Title="Desktop Apps" Height="255" Width="400" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+        Title="Desktop Apps" Height="255" Width="400" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="#FFB0B0B0">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF474747" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
 
     <Grid>
-        <Button x:Name="Stopwatch" Content="" HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Click="Stopwatch_Click" Cursor="Hand">
+        <Button x:Name="Stopwatch" Content="" HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Click="Stopwatch_Click" Cursor="Hand" BorderBrush="Transparent" Focusable="False">
             <Button.ToolTip>
                 <ToolTip>
                     Stopwatch
@@ -28,9 +34,9 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="Stopwatch_Copy" Content="" HorizontalAlignment="Left" Height="96" Margin="111,10,0,0" VerticalAlignment="Top" Width="96" Click="Stopwatch_Click" Cursor="Hand">
+        <Button x:Name="RandomApp" Content="" HorizontalAlignment="Left" Height="96" Margin="111,10,0,0" VerticalAlignment="Top" Width="96" Click="OpenRandomTools" Cursor="Hand" BorderBrush="Transparent" Foreground="#FFC7C7C7" Focusable="False">
             <Button.ToolTip>
-                <ToolTip Content="Stopwatch"/>
+                <ToolTip Content="Random Generation Tools"/>
             </Button.ToolTip>
             <Button.Background>
                 <ImageBrush Stretch="UniformToFill" ImageSource="/dice.png">

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DesktopTools.Views;
 
 namespace DesktopTools
 {
@@ -27,8 +28,14 @@ namespace DesktopTools
 
         private void Stopwatch_Click(object sender, RoutedEventArgs e)
         {
-            DesktopTools.TimerApp stopwatch = new TimerApp();
+            DesktopTools.Views.TimerApp stopwatch = new DesktopTools.Views.TimerApp();
             stopwatch.Show();
+        }
+
+        private void OpenRandomTools(object sender, RoutedEventArgs e)
+        {
+            DesktopTools.Views.Random randomTools = new DesktopTools.Views.Random();
+            randomTools.Show();
         }
     }
 }

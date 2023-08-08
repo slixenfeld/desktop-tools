@@ -9,11 +9,15 @@
   <ItemGroup>
     <None Remove="dice.png" />
     <None Remove="stopwatch.png" />
+    <None Remove="Views\dice.png" />
+    <None Remove="Views\stopwatch.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="dice.png" />
     <Resource Include="stopwatch.png" />
+    <Resource Include="Views\dice.png" />
+    <Resource Include="Views\stopwatch.png" />
   </ItemGroup>
 
 </Project>
